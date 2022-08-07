@@ -2,14 +2,10 @@ const express = require("express");
 const isUrlValid = require("url-validation");
 const { getLinkPreview } = require("link-preview-js");
 const cors = require("cors");
-const path = require("path");
 
 const app = express();
 
-const dir = path.join(__dirname, "public");
-
 app.use(cors());
-app.use(express.static(dir));
 
 app.get("/", async (req, res) => {
   const url = req.query.url;
@@ -35,5 +31,5 @@ app.get("/", async (req, res) => {
   }
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => console.log("server started at port", PORT));

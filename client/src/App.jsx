@@ -6,7 +6,7 @@ import { DummyCard } from "./component/DummyCard";
 import isUrlValid from "url-validation";
 import { Toast } from "./component/Toast";
 
-const api = "http://localhost:3001/";
+const api = "https://linkpreviewrestapi.herokuapp.com/";
 
 const INITIAL_TOAST_VALUE = {
   hidden: true,
