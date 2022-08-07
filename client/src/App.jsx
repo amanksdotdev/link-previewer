@@ -135,7 +135,13 @@ function App() {
         <Toast {...toast} />
       </div>
       <footer className="text-center w-full border-t z-10 p-2 sticky bottom-0 bg-white">
-        Made with 😴 by <strong className="text-red-500">Aman</strong>
+        Made with 😴 by{" "}
+        <a
+          href="https://www.findcoder.io/u/amanksingh99"
+          className="text-red-500 font-semibold"
+        >
+          Aman
+        </a>
       </footer>
     </Fragment>
   );
