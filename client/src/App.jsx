@@ -65,7 +65,7 @@ function App() {
               <input
                 value={input}
                 onChange={(e) => {
-                  setInput(e.target.value);
+                  setInput(e.target.value.trim());
                 }}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
