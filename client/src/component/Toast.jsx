@@ -5,7 +5,7 @@ export const Toast = ({ message, type = "info", hidden = true }) => {
     <div
       className={`${
         hidden ? "opacity-0" : ""
-      } flex flex-col justify-center absolute top-2 right-2 duration-500 transition-opacity`}
+      } flex flex-col justify-center absolute top-2 right-2 duration-500 transition-opacity max-w-[90%]`}
     >
       {type === "info" ? (
         <div
